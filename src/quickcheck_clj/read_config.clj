@@ -14,7 +14,7 @@
   (str/lower-case (dasherize s)))
 
 (defn string-into-keyword-and-value [s]
-   (let [pair (str/split s #"=| ")]
+   (let [pair (str/split s #"=")]
    (hash-map (keyword (dasherize-and-lowercase (first pair))) (second pair))))
 
 (defn config-to-map [conf]

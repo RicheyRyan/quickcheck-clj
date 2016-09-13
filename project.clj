@@ -8,4 +8,8 @@
   :main ^:skip-aot quickcheck-clj.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
-  :plugins [[lein-kibit "0.1.2"]])
+  :plugins [[lein-kibit "0.1.2"]
+            [lein-bikeshed "0.3.0"]
+            [jonase/eastwood "0.2.3"]
+            [venantius/yagni "0.1.4"]
+            [lein-ancient "0.6.10"]])
